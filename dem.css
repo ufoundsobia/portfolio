@@ -1,11 +1,13 @@
 body, html {
     font-family: "DM Serif Display", serif;
-    color: rgb(62, 109, 62);
-    background-color: rgb(186, 206, 240);
+    color: #A34343;
+    background-color: #FEFDED; 
     margin: 0;
     scroll-behavior: smooth;
 }
-
+*{
+    font-family: "DM Serif Display", serif;
+}
 h1, h2, h3, h4 {
     text-align: center;
     background-color: inherit;
@@ -17,15 +19,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 10%;
-    background-color: rgb(152, 184, 241);
+    background-color: #FA7070; 
+    border-bottom:10px dotted #A34343;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 2em;
     font-weight: 1000;
     cursor: pointer;
 }
-
+.logo .fa-moon{
+    margin-right: 10px;
+}
 .navbar {
     list-style: none;
     padding: 0;
@@ -41,26 +48,29 @@ header {
     font-weight: 500;
     font-size: 1.5em;
     text-decoration: none;
-    color: inherit;
+    color: #0A6847; 
     transition: all 0.3s ease;
 }
 
-.navbar li a:hover{
-    color: rgb(91, 137, 59);
-}
-.ct button:hover {
-    font-size: 1.4em;
-    color: rgb(146, 189, 114);
-    background-color: rgb(91, 91, 161);
+.navbar li a:hover {
+    color: #A1C398; 
 }
 
 .ct button {
+    font-family: "DM Serif Display", serif;
     padding: 9px 25px;
-    background-color: rgba(76, 76, 165, 1);
-    color: rgb(145, 174, 145);
+    background-color: #A34343; 
+    color: #FEFDED; 
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ct button:hover {
+    font-size: 1.4em;
+    color: #A34343; 
+    background-color: #C6EBC5; 
 }
 
 #home, #aboutme, #edu {
@@ -68,34 +78,53 @@ header {
     background-color: inherit;
     min-height: 600px;
 }
+
 #home {
-    background-color: rgb(149, 187, 151);
+    background: linear-gradient(45deg,#fea8a8 , #FEFDED , #9afcda  );
+    background-size: 500% 500%;
+    animation: gradientanimation 2.5s ease infinite;
+    background-position: 0% 50%;
 }
+@keyframes gradientanimation {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+
 #home p, #aboutme p {
     font-size: 1.5em;
 }
-#home p{
+
+#home p {
     text-align: center;
 }
+
 .homebg, .aboutbg {
     text-align: center;
 }
 
 .colorname {
-    color: rgb(61, 85, 161);
-    text-decoration: wavy rgb(40, 40, 120);
+    color: #0A6847; 
+    text-decoration: wavy #FEFDED; 
 }
 
 #fa-arrow-down {
+    color: #A34343;
     text-align: center;
     font-size: 3em;
+    margin-top: 100px;
+    transition: all 0.3s ease;
+}
+#fa-arrow-down:hover{
+    font-size: 3.5em;
+    margin-top: 130px;
 }
 
 #aboutme {
     display: flex;
     align-items: center;
-    background-color: rgb(62, 109, 62);
-    color: rgb(149, 187, 151);
+    background-color: #FA7070;
+    color: #FEFDED; 
 }
 
 .lap {
@@ -109,8 +138,8 @@ header {
 }
 
 #edu {
-    background-color: rgb(154, 172, 211);
-    color: rgb(45, 77, 114);
+    background-color: #C6EBC5;
+    color: #0A6847; 
     position: relative;
 }
 
@@ -123,7 +152,7 @@ header {
 
 .edu-icons i {
     font-size: 3em;
-    color: rgb(62, 109, 62);
+    color: #A34343;
 }
 
 .fa-book {
@@ -145,26 +174,27 @@ header {
 }
 
 .edutable li {
-    margin: 20px 0;
+    margin: 50px 0;
     font-size: 1.8em;
     text-decoration: none;
 }
 
 .edutable li a {
     text-decoration: none;
-    font-size: 50px;
-    color: rgb(44, 105, 174);
+    font-size: 30px;
+    color: #0A6847; 
+    transition: all 0.3s ease;
 }
 
 .edutable li a:hover {
-    color: rgb(16, 80, 154);
-    font-size: 45px;
+    color: #A1C398; 
+    font-size: 25px;
 }
 
 #contact {
-    background-color: rgb(152, 184, 241);
+    background-color: #FEFDED; 
     padding: 50px 10%;
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .contbg {
@@ -184,10 +214,157 @@ header {
 .contbg i {
     display: block;
     font-size: 2.5em;
-    color: rgb(62, 109, 62);
+    color: #FA7070; 
 }
 
 .conx {
     margin-top: 10px;
     font-size: 1.5em;
 }
+
+#achievements {
+    background-color: #FA7070;
+    color: #FEFDED;
+    padding: 50px 10%;
+    min-height: 600px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.achievement-box {
+    position: relative;
+    width: 20%;
+    padding: 20px;
+    background-color: rgba(254, 253, 237, 0);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.achievement-image {
+    border-radius: 15px;
+    height: 200px;
+    border-color: rgba(250, 112, 112, 1);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    transition: filter 0.3s ease;
+}
+
+.image1 {
+    background-image: url('download.jpg');
+}
+
+.image2 {
+    background-image: url('interim.jpg');
+}
+
+.image3 {
+    background-image: url('speaker.jpg');
+}
+
+.achievement-details {
+    position: absolute;
+    color:#c9dbc4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.achievement-box.active .achievement-details {
+    opacity: 1;
+}
+
+.achievement-box.active .achievement-image {
+    filter: blur(5px) brightness(0.6);
+}
+
+.achievement-details h3 {
+    color: #A34343;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .achievement-box {
+        width: 100%;
+    }
+}
+
+/* #achievements {
+    background-color: #FA7070;
+    color: #FEFDED;
+    padding: 50px 10%;
+    min-height: 300px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.achievement-box {
+    width: 20%;
+    padding: 20px;
+    background-color: #FEFDED;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* .achievement-image:hover{
+    filter: blur(5px) saturate(50%);
+} */
+/* .achievement-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.image1 {
+    text-align: center;
+    color: rgba(10, 104, 71, 0);
+    font-weight: 300;
+    background-image: url('download.jpg');
+}
+
+.image2 {
+    text-align: center;
+    color: rgba(10, 104, 71, 0);
+    font-weight: 300;
+    background-image: url('interim.jpg');
+}
+
+.image3 {
+    text-align: center;
+    color: rgba(10, 104, 71, 0);
+    font-weight: 300;
+    background-image: url('speaker.jpg');
+}
+.image1:hover,.image2:hover,.image3:hover{
+    color: #0A6847;
+    image-rendering: blur(5px) saturate(50%);
+}
+
+.achievement-box h3 {
+    color: #A34343;
+    font-size: 1.8em;
+}*/ 

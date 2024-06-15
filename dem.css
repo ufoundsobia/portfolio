@@ -105,6 +105,8 @@ p{
 #fa-arrow-down{
     text-align: center;
     background-color: rgb(149, 187, 151);
+    font-size: 9em;
+    line-height: normal;
 }
 .fa-solid{
     background-color: rgb(149, 187, 151);

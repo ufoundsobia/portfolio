@@ -13,12 +13,13 @@
 </head>
 <body>
     <header class="navi">
-        <h1 class="logo">Sobia</h1>
+        <h1 class="logo"><i class="fa-solid fa-moon" style="color: #FEFDED;"></i> Sobia</h1>
         <nav>
             <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutme">About</a></li>
                 <li><a href="#edu">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
             </ul>
         </nav>
         <a class="ct" href="#contact"><button>Contact Me</button></a>
@@ -32,7 +33,9 @@
         <p>My name is Sobia Amena Aijaz, and this is my portfolio webpage I made using HTML and CSS.</p>
         <p>Scroll down or click on the navigation bar options to learn more about me.</p>
         <div id="fa-arrow-down">
-            <i class="fa-solid fa-arrow-down fa-2xl"></i>
+            <a href="#aboutme" style="color: #A34343;">
+            <i class="fa-solid fa-arrow-down fa-2xl" ></i>
+            </a>
         </div>
     </section>
     
@@ -57,6 +60,41 @@
             <li class="edli"><a href="https://www.mjcollege.ac.in/">Undergrad: Muffakham Jah College of Engineering and Technology</a></li>
         </ul>
     </section>
+
+    <section id="achievements">
+        <h2>-Achievements-</h2>
+        <p style=" color:#feb9b9">click on the pictures!</p>
+        <div class="flex-container">
+            <div class="achievement-box" onclick="toggleDetails(this)">
+                <div class="achievement-image image1"></div>
+                <div class="achievement-details">
+                    <h3 style="color: #feb9b9;">School representative award</h3>
+                    <p>Award for school representatives in rajdeep sardesai's show.</p>
+                </div>
+            </div>
+            <div class="achievement-box" onclick="toggleDetails(this)">
+                <div class="achievement-image image2"></div>
+                <div class="achievement-details">
+                    <h3 style="color: #feb9b9;">Intermediate Result</h3>
+                    <p>Passed with a percentage of 97%</p>
+                </div>
+            </div>
+            <div class="achievement-box" onclick="toggleDetails(this)">
+                <div class="achievement-image image3"></div>
+                <div class="achievement-details">
+                    <h3 style="color: #feb9b9;">Internpreneur Speaker</h3>
+                    <p>Became a speaker in the internpreneur workshop</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleDetails(element) {
+                element.classList.toggle('active');
+            }
+        </script>
+    </section>
+
+
     
     <section id="contact">
         <h2>-Contact Me-</h2>
@@ -75,5 +113,8 @@
             </a>
         </div>
     </section>
+    <footer>
+        <p>&copy; 2024 Sobia. All rights reserved.</p>
+    </footer>
 </body>
 </html>

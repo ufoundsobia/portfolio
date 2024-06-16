@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f5736dfa32.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="Lovepik_com-400871421-floating-stars.png" type="png/x-icon">
+    <link rel="shortcut icon" href="Lovepik_com-611749680-Blue 25d laptop illustration.png" type="png/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navi">
@@ -26,12 +29,17 @@
     </header>
     
     <section id="home">
-        <div class="homebg">
-            <h2>Hello! I am</h2>
-            <h2 class="colorname">SOBIA</h2>
-        </div>
-        <p>My name is Sobia Amena Aijaz, and this is my portfolio webpage I made using HTML and CSS.</p>
-        <p>Scroll down or click on the navigation bar options to learn more about me.</p>
+        <div class="homebg" style="top: 80px;">
+            <h2>Hello! I am<span class="colorname">SOBIA</span>,</h2>
+        <p style="color:  #FA7070;text-shadow:1px 1px  #A34343;">My name is Sobia Amena Aijaz, and this is my portfolio webpage I made using HTML and CSS.</p>
+        <p style="color:  #FA7070;text-shadow:1px 1px #A34343;">Scroll down or click on the navigation bar options to learn more about me.</p>
+    </div>
+    <div class="bunny">
+        <h2 class="repeat1" style="font-size: 60px;">portfolio</h2>
+        <h2 class="repeat2" style="font-size: 60px;">portfolio</h2>
+        <h2 class="repeat3" style="font-size: 60px;">portfolio</h2>
+    <img class="bunny" src="Lovepik_com-833488042-White cute cartoon bunny png element.png" alt="bunny pic">
+    </div>
         <div id="fa-arrow-down">
             <a href="#aboutme" style="color: #A34343;">
             <i class="fa-solid fa-arrow-down fa-2xl" ></i>
@@ -39,14 +47,26 @@
         </div>
     </section>
     
-    <section id="aboutme">
-        <img class="lap" src="Lovepik_com-611749680-Blue 25d laptop illustration.png" alt="laptop">
-        <div class="aboutbg">
-            <h3>-About Me-</h3>
-            <p>I am a first-year undergraduate student majoring in Computer Science and Engineering with a burgeoning interest in frontend web development, creative design, and UI/UX design. Currently, I am honing my skills in JavaScript and C++, while also building on my foundational knowledge of C, acquired during my first semester. My passion for technology drives me to continuously explore and learn new tools and techniques in the field. I am particularly enthusiastic about creating intuitive and visually appealing user interfaces, and I am eager to expand my expertise and contribute to innovative projects that bridge the gap between technology and user experience.</p>
+     <section id="aboutme">
+        <input type="checkbox" id="toggle-extra-content" hidden>
+        <div class="about-content">
+            <div class="about-left">
+                <div class="about-text">
+                    <h3>-About Me-</h3>
+                    <p style=" color: #f6f4db;">I'm a first-year CSE undergraduate, currently learning web development. Passionate about technology, I'm eager to explore various fields within computer science and expand my skills and knowledge.</p>
+                    <label for="toggle-extra-content" class="interests-btn">My skills</label>
+                </div>
+                <img class="lap" src="Lovepik_com-611749680-Blue 25d laptop illustration.png" alt="laptop">
+            </div>
+        </div>
+        <div class="extra-content">
+            <div class="extra-box">Know basic foundational languages like c and c++</div>
+            <div class="extra-box">Can create basic skeleton webpages using html and css</div>
+            <div class="extra-box">have good soft skills to interact with people professionally</div>
+            <div class="extra-box">learning JavaScript and autocad</div>
         </div>
     </section>
-    
+    <br>
     <section id="edu">
         <h4>-Education-</h4>
         <div class="edu-icons">
@@ -60,7 +80,7 @@
             <li class="edli"><a href="https://www.mjcollege.ac.in/">Undergrad: Muffakham Jah College of Engineering and Technology</a></li>
         </ul>
     </section>
-
+    <br>
     <section id="achievements">
         <h2>-Achievements-</h2>
         <p style=" color:#feb9b9">click on the pictures!</p>
@@ -94,8 +114,6 @@
         </script>
     </section>
 
-
-    
     <section id="contact">
         <h2>-Contact Me-</h2>
         <div class="contbg">

@@ -3,51 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sortfolio</title>
-    <link rel="stylesheet" href="dem.css">
+    <title>Portfolio - Sobia</title>
+    <link rel="shortcut icon" href="icons8-4-point-star-64.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f5736dfa32.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="Lovepik_com-611749680-Blue 25d laptop illustration.png" type="png/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navi">
-        <h1 class="logo"><i class="fa-solid fa-moon" style="color: #FEFDED;"></i> Sobia</h1>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutme">About</a></li>
-                <li><a href="#edu">Education</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-            </ul>
-        </nav>
-        <a class="ct" href="#contact"><button>Contact Me</button></a>
-    </header>
-    
-    <section id="home">
-        <div class="homebg" style="top: 80px;">
-            <h2>Hello! I am<span class="colorname">SOBIA</span>,</h2>
-        <p style="color:  #FA7070;text-shadow:1px 1px  #A34343;">My name is Sobia Amena Aijaz, and this is my portfolio webpage I made using HTML and CSS.</p>
-        <p style="color:  #FA7070;text-shadow:1px 1px #A34343;">Scroll down or click on the navigation bar options to learn more about me.</p>
-    </div>
-    <div class="bunny">
-        <h2 class="repeat1" style="font-size: 60px;">portfolio</h2>
-        <h2 class="repeat2" style="font-size: 60px;">portfolio</h2>
-        <h2 class="repeat3" style="font-size: 60px;">portfolio</h2>
-    <img class="bunny" src="Lovepik_com-833488042-White cute cartoon bunny png element.png" alt="bunny pic">
-    </div>
-        <div id="fa-arrow-down">
-            <a href="#aboutme" style="color: #A34343;">
-            <i class="fa-solid fa-arrow-down fa-2xl" ></i>
-            </a>
+    <header>
+        <div class="logo">
+            <img src="icons8-4-point-star-64.png" alt="star icon">
+            <span>Sobia Amena Amena</span>
         </div>
-    </section>
-    
-     <section id="aboutme">
+        <nav>
+            <a href="#aboutme">About me</a>
+            <a href="#edu">Education</a>
+            <a href="#achievements">Acheivements</a>
+            <a href="#contact" class="contact-btn">Get in touch!</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content-section">
+            <div class="left-text">
+                <h2 class="intro-text">Hello, I am Sobia!</h2>
+                <p id="text-effect">
+                </p>
+                    
+            </div>
+            <div class="portfolio-section">
+                <div class="text-content">
+                    <h1 class="portfolio-title">PORTFOLIO</h1>
+                    <h1 class="portfolio-overlay portfolio-overlay1">PORTFOLIO</h1>
+                    <h1 class="portfolio-overlay portfolio-overlay2">PORTFOLIO</h1>
+                    <h1 class="portfolio-overlay portfolio-overlay3">PORTFOLIO</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const textoutput = document.getElementById("text-effect");
+    let text = "My name is Sobia Amena Aijaz, and this is my portfolio webpage I made using HTML and CSS. Scroll down or click on the navigation bar options to learn more about me.";
+    let count = 0;
+
+    function textTyping() {
+        if (count < text.length) {
+            textoutput.innerHTML += text[count];
+            count++;
+            setTimeout(textTyping, 50);
+        }
+    }
+
+    textTyping();
+    </script>
+
+    <section id="aboutme">
         <input type="checkbox" id="toggle-extra-content" hidden>
         <div class="about-content">
             <div class="about-left">
@@ -66,44 +83,44 @@
             <div class="extra-box">learning JavaScript and autocad</div>
         </div>
     </section>
-    <br>
+
     <section id="edu">
-        <h4>-Education-</h4>
+        <h4 style="color: #dedcbc; text-shadow:1.3px 1.3px rgba(59, 80, 59, 0.811);">-Education-</h4>
         <div class="edu-icons">
             <i class="fa-solid fa-book"></i>
             <i class="fa-solid fa-scroll"></i>
             <i class="fa-solid fa-graduation-cap"></i>
         </div>
         <ul class="edutable">
-            <li class="edli"><a href="https://mseducationacademy.in/">School: MS High School</a></li>
-            <li class="edli"><a href="https://mseducationacademy.in/">Intermediate: MS Junior College</a></li>
-            <li class="edli"><a href="https://www.mjcollege.ac.in/">Undergrad: Muffakham Jah College of Engineering and Technology</a></li>
+            <li class="edli"><a href="https://mseducationacademy.in/" style="font-weight: bolder; text-shadow:1.3px 1.3px 10px rgba(198, 216, 198, 0.811);">School: MS High School</a></li>
+            <li class="edli"><a href="https://mseducationacademy.in/" style="font-weight: bolder;text-shadow:1.3px 1.3px 10px rgba(198, 216, 198, 0.811);">Intermediate: MS Junior College</a></li>
+            <li class="edli"><a href="https://www.mjcollege.ac.in/" style="font-weight: bolder;text-shadow:1.3px 1.3px 10px rgba(198, 216, 198, 0.811);">Undergrad: Muffakham Jah College of Engineering and Technology</a></li>
         </ul>
     </section>
-    <br>
+
     <section id="achievements">
-        <h2>-Achievements-</h2>
-        <p style=" color:#feb9b9">click on the pictures!</p>
+        <h2 style="font-size: 50px; text-shadow:1.3px 1.3px rgba(59, 80, 59, 0.811);">-Achievements-</h2>
+        <p style=" color:bisque; text-shadow:1.3px 1.3px rgba(59, 80, 59, 0.811);">click on the pictures!</p>
         <div class="flex-container">
             <div class="achievement-box" onclick="toggleDetails(this)">
                 <div class="achievement-image image1"></div>
                 <div class="achievement-details">
-                    <h3 style="color: #feb9b9;">School representative award</h3>
-                    <p>Award for school representatives in rajdeep sardesai's show.</p>
+                    <h3 style="color: bisque;">School representative award</h3>
+                    <p style="text-shadow:1.3px 1.3px rgba(59, 80, 59, 0.811);">Award for school representatives in rajdeep sardesai's show.</p>
                 </div>
             </div>
             <div class="achievement-box" onclick="toggleDetails(this)">
                 <div class="achievement-image image2"></div>
                 <div class="achievement-details">
-                    <h3 style="color: #feb9b9;">Intermediate Result</h3>
-                    <p>Passed with a percentage of 97%</p>
+                    <h3 style="color: bisque;">Intermediate Result</h3>
+                    <p style="text-shadow:1.3px 1.3px rgba(59, 80, 59, 0.811);">Passed with a percentage of 97%</p>
                 </div>
             </div>
             <div class="achievement-box" onclick="toggleDetails(this)">
                 <div class="achievement-image image3"></div>
                 <div class="achievement-details">
-                    <h3 style="color: #feb9b9;">Internpreneur Speaker</h3>
-                    <p>Became a speaker in the internpreneur workshop</p>
+                    <h3 style="color: bisque;">Internpreneur Speaker</h3>
+                    <p style="text-shadow:1.3px 1.3px rgba(59, 80, 59, 0.811);">Became a speaker in the internpreneur workshop</p>
                 </div>
             </div>
         </div>
@@ -117,15 +134,15 @@
     <section id="contact">
         <h2>-Contact Me-</h2>
         <div class="contbg">
-            <a href="tel:123456789">
+            <a href="tel:123456789" class="contact-item">
                 <i class="fa-solid fa-phone"></i>
                 <p class="conx">123456789</p>
             </a>
-            <a href="mailto:sobia.a.a.7820@gmail.com">
+            <a href="mailto:sobia.a.a.7820@gmail.com" class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
                 <p class="conx">sobia.a.a.7820@gmail.com</p>
             </a>
-            <a href="https://www.linkedin.com/in/sobia-amena-aijaz-91a124284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <a href="https://www.linkedin.com/in/sobia-amena-aijaz-91a124284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-item">
                 <i class="fa-brands fa-linkedin"></i>
                 <p class="conx">LinkedIn</p>
             </a>
@@ -134,5 +151,6 @@
     <footer>
         <p>&copy; 2024 Sobia. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
